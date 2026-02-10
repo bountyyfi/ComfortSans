@@ -90,6 +90,12 @@ Copy to `~/.local/share/fonts/` then run `fc-cache -fv`
 
 ---
 
+## About
+
+Created by [@bountyyfi](https://github.com/bountyyfi) — security researcher and bug bounty hunter. Built ComfortSans for long hours of reading code, reports, and terminal output without eye strain.
+
+---
+
 ## License
 
 ComfortSans is licensed under the [SIL Open Font License, Version 1.1](https://scripts.sil.org/OFL).
